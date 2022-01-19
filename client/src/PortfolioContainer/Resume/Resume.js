@@ -45,11 +45,12 @@ const Resume = (props) => {
     /* STATIC RESUME DATA FOR THE LABELS*/
     const resumeBullets = [
         { label: "Education", logoSrc: "education.svg" },
+        { label: "Online Courses", logoSrc: "interests.svg" },
         { label: "Work History", logoSrc: "work-history.svg" },
         { label: "Programming Skills", logoSrc: "programming-skills.svg" },
         { label: "Projects", logoSrc: "projects.svg" },
         { label: "Interests", logoSrc: "interests.svg" },
-    ];
+            ];
 
     //here we have
     const programmingSkillsDetails = [
@@ -58,24 +59,24 @@ const Resume = (props) => {
         { skill: 'Python', ratingPercentage: 80 },
         { skill: 'HTMl/CSS', ratingPercentage: 65 },
         { skill: 'JavaScript', ratingPercentage: 60 },
-        { skill: 'JavaScript', ratingPercentage: 55 },
+        { skill: 'React', ratingPercentage: 55 },
     ];
 
     const projectsDetails = [
         {
-            tittle: 'Personal Portofolio Website',
+            title: 'Personal Portofolio Website',
             duration: { fromDate: '2021', toDate: '2022' },
             description: 'A personal Portofolio website to showcase all my details and projects at one place',
             subHeading: 'Technologies Used: React JS'
         },
         {
-            tittle: 'Thesis Stergios Paparizos',
+            title: 'Thesis Stergios Paparizos',
             duration: { fromDate: '2019', toDate: '2019' },
             description: 'Creating an application to find the best route to ',
             subHeading: 'Python'
         },
     ];
-
+        /* Education */
     const resumeDetails = [
         <div className="resume-screen-container" key="education">
             <ResumeHeading
@@ -95,6 +96,29 @@ const Resume = (props) => {
                 subHeading={"Master’s Degree in Computational Mechanis-Stucture sector"}
                 fromDate={'2018'}
                 toDate={'2020'}
+            />
+        </div>,
+
+        /*online courses */
+            
+        <div className="resume-screen-container" key="Online Courses">
+            <ResumeHeading
+                heading={'2022 Complete Python Bootcamp From Zero to Hero in Python'}
+                subHeading={"Udemy Courses"}
+                fromDate={'August 2021'}
+                toDate={'September 2021'}
+            />
+            <ResumeHeading
+                heading={'The Web Developer Bootcamp 2022'}
+                subHeading={"Udemy Courses"}
+                fromDate={'September 2021'}
+                toDate={'November 2021'}
+            />
+            <ResumeHeading
+                heading={'Modern React with Redux'}
+                subHeading={"Udemy Courses, Master React and Redux with React Router, Webpack, and Create-React-App. Includes Hooks! "}
+                fromDate={'November 2021'}
+                toDate={'January 2022'}
             />
         </div>,
 
