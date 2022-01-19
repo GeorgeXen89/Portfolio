@@ -50,7 +50,7 @@ export default function Profile() {
                 />
               </h1>
               <span className="profile-role-tagline">
-                Keep Learning and Trying to Be The Best of Me.
+                The most difficult thing is the decision to act, the rest is merely tenacity.
               </span>
             </span>
           </div>
@@ -72,3 +72,4 @@ export default function Profile() {
     </div>
   );
 }
+
