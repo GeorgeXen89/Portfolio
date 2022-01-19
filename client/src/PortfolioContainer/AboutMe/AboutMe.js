@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+iimport React, { useEffect } from "react";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
@@ -13,7 +13,7 @@ export default function AboutMe(props) {
         ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
     const SCREEN_CONSTSANTS = {
-        description: 'I am Aeronautical Engineer & Aircraft Mechanic. 1st Master in Marine Technology and Science. 2nd Master in Computational Engineering. Experienced in Flight Mishap Investigation-Flight Safety. Specialties: Solidworks; Ansys; Python; matlab;advanced Excel knowledge; Book lover and addicted to chess. ',
+        description: 'I am Aeronautical Engineer & Aircraft Mechanic. 1st Master in Marine Technology and Science. 2nd Master in Computational Engineering. Experienced in Flight Mishap Investigation-Flight Safety. Specialties: Solidworks; Ansys; Python;javascript;css;html;React; matlab;advanced Excel knowledge; Book lover and addicted to chess. ',
         highlights: {
             bullets: [
                 "Aeronautical Engineer",
@@ -22,6 +22,7 @@ export default function AboutMe(props) {
                 'Quality Assurance Quality Control Supervisor',
                 'Quality Assurance Quality Control Officer',
                 'Quality Control Supervisor',
+                'Depot level, Engineering Derectorate'
             ],
             heading: "Here are a Few Highlights:",
         },
