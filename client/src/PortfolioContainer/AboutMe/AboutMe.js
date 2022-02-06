@@ -1,4 +1,4 @@
-iimport React, { useEffect } from "react";
+import React, { useEffect } from "react";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
@@ -13,16 +13,14 @@ export default function AboutMe(props) {
         ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
     const SCREEN_CONSTSANTS = {
-        description: 'I am Aeronautical Engineer & Aircraft Mechanic. 1st Master in Marine Technology and Science. 2nd Master in Computational Engineering. Experienced in Flight Mishap Investigation-Flight Safety. Specialties: Solidworks; Ansys; Python;javascript;css;html;React; matlab;advanced Excel knowledge; Book lover and addicted to chess. ',
+        description: 'I am Aeronautical Engineer & Aircraft Mechanic. 1st Master in Marine Technology and Science. 2nd Master in Computational Engineering. Experienced in Flight Mishap Investigation-Flight Safety. Specialties: Solidworks; Ansys; Python;HTML;CSS;Javascript;React;Redux; matlab;advanced Excel knowledge; Book lover and addicted to chess. My current passion is Programming. ',
         highlights: {
             bullets: [
-                "Aeronautical Engineer",
-                'Mirage 2000 Flight Line - Operational Level Maintenance',
-                'Preventive Maintenance Supervisor',
-                'Quality Assurance Quality Control Supervisor',
-                'Quality Assurance Quality Control Officer',
-                'Quality Control Supervisor',
-                'Depot level, Engineering Derectorate'
+                "2007/Passing 19,2/20 in the National Exams, giving the opportunity to choose any university I wanted in Greece.",
+                '2011/Graduation from Hellenic Air Force Academy and I swear as an HAF officer.',
+                '2014/ Flight Line Manager of a Greek NATO mission in Spain.',
+                '2017/Master’s Degree in Marine Technology and Science.',
+                '2020/Master’s Degree in Computational Mechanic.',
             ],
             heading: "Here are a Few Highlights:",
         },
@@ -63,7 +61,7 @@ export default function AboutMe(props) {
                                 {" "}
                                 Hire Me{" "}
                             </button>
-                            <a href="CV-Europass-20190724.pdf" download="CV-Europass-20190724.pdf">
+                            <a href="CV.pdf" download="CV.pdf">
                                 <button className="btn highlighted-btn">Get Resume</button>
                             </a>
                         </div>
