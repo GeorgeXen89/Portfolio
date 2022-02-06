@@ -18,7 +18,7 @@ export default function Profile() {
               <a href="https://www.linkedin.com/in/xenakisgeorge/">
                 <i className="fa fa-linkedin"></i>
               </a>
-              <a href="https://twitter.com/Gsu15fTbQoxy6Oe">
+              <a href="https://twitter.com/I_C_P__06">
                 <i className="fa fa-twitter"></i>
               </a>
             </div>
@@ -44,7 +44,7 @@ export default function Profile() {
                     1000,
                     "Aircraft Mechanic 🖋️",
                     1000,
-                    "Full Stack Developer 🌍",
+                    "Junior Full Stack Developer 🌍",
                     1000,
                   ]}
                 />
@@ -60,7 +60,7 @@ export default function Profile() {
 
               Hire Me!
             </button>
-            <a href="CV-Europass-20190724.pdf" download="CV-Europass-20190724.pdf">
+            <a href="CV.pdf" download="CV.pdf">
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
           </div>
@@ -72,4 +72,5 @@ export default function Profile() {
     </div>
   );
 }
+
 
