@@ -47,19 +47,35 @@ const Resume = (props) => {
         { label: "Education", logoSrc: "education.svg" },
         { label: "Online Courses", logoSrc: "interests.svg" },
         { label: "Work History", logoSrc: "work-history.svg" },
+        { label: "Skills", logoSrc: "work-history.svg" },
         { label: "Programming Skills", logoSrc: "programming-skills.svg" },
-        { label: "Projects", logoSrc: "projects.svg" },
+        { label: "Programming Projects", logoSrc: "projects.svg" },
         { label: "Interests", logoSrc: "interests.svg" },
-            ];
+    ];
 
     //here we have
+    const SkillsDetails = [
+        { skillD: 'Computational Fluid Dynamics (CFD)', ratingPercentage: 95 },
+        { skillD: 'Computer-Aided Design (CAD)', ratingPercentage: 90 },
+        { skillD: 'Computer-aided engineering (CAE)', ratingPercentage: 88 },
+        { skillD: 'Computer-aided manufacturing (CAM)', ratingPercentage: 50 },
+        { skillD: 'SolidWorks', ratingPercentage: 90 },
+        { skillD: 'ANSYS', ratingPercentage: 70 },
+        { skillD: '3D Scanning', ratingPercentage: 90 },
+        { skillD: 'Mechanical Engineering', ratingPercentage: 95 },
+        { skillD: 'Aircraft Maintenance', ratingPercentage: 90 },
+        { skillD: 'Engineering Management', ratingPercentage: 88 },
+        { skillD: 'Flight Safety', ratingPercentage: 85 },
+        { skillD: '3D Printing', ratingPercentage: 70 },
+        { skillD: 'Dimensional Metrology', ratingPercentage: 70 },
+    ];
+
     const programmingSkillsDetails = [
-        { skill: 'Matlab', ratingPercentage: 70 },
-        { skill: 'Excel', ratingPercentage: 90 },
         { skill: 'Python', ratingPercentage: 80 },
         { skill: 'HTMl/CSS', ratingPercentage: 65 },
         { skill: 'JavaScript', ratingPercentage: 60 },
-        { skill: 'React', ratingPercentage: 55 },
+        { skill: 'React with Redux', ratingPercentage: 70 },
+        { skill: 'Matlab', ratingPercentage: 70 },
     ];
 
     const projectsDetails = [
@@ -70,13 +86,13 @@ const Resume = (props) => {
             subHeading: 'Technologies Used: React JS'
         },
         {
-            title: 'Thesis Stergios Paparizos',
-            duration: { fromDate: '2019', toDate: '2019' },
-            description: 'Creating an application to find the best route to ',
+            title: "Stergios Paparizos thesis in master's degree at University of Patras with tittle:'COST-DURATION OPTIMIZATION OF WORKS IN EXPANDED NETWORKS OF TECHNICAL WORKS WITH USE OF LINEAR PROGRAMMING' ",
+            duration: { fromDate: '2019', toDate: '2020' },
+            description: 'Creating an application to optimization and find the most suitable time-cost combinations for the execution of each project activity for a Civil-Engineering ',
             subHeading: 'Python'
         },
     ];
-        /* Education */
+    /* Education */
     const resumeDetails = [
         <div className="resume-screen-container" key="education">
             <ResumeHeading
@@ -93,15 +109,21 @@ const Resume = (props) => {
             />
             <ResumeHeading
                 heading={'National Technical University of Athens'}
-                subHeading={"Master’s Degree in Computational Mechanis-Stucture sector"}
+                subHeading={"Master’s Degree in Computational Mechanics-Stucture sector"}
                 fromDate={'2018'}
                 toDate={'2020'}
             />
         </div>,
 
         /*online courses */
-            
+
         <div className="resume-screen-container" key="Online Courses">
+            <ResumeHeading
+                heading={'ENGR2000X: A Hands-on Introduction to Engineering Simulations'}
+                subHeading={"Cornell University, Edex Courses"}
+                fromDate={'October 2019'}
+                toDate={'November 2019'}
+            />
             <ResumeHeading
                 heading={'2022 Complete Python Bootcamp From Zero to Hero in Python'}
                 subHeading={"Udemy Courses"}
@@ -118,7 +140,7 @@ const Resume = (props) => {
                 heading={'Modern React with Redux'}
                 subHeading={"Udemy Courses, Master React and Redux with React Router, Webpack, and Create-React-App. Includes Hooks! "}
                 fromDate={'November 2021'}
-                toDate={'January 2022'}
+                toDate={'February 2022'}
             />
         </div>,
 
@@ -126,33 +148,62 @@ const Resume = (props) => {
         <div className="resume-screen-container" key="work-experience">
             <div className="experience-container">
                 <ResumeHeading
-                    heading={'Hellenic Air Force'}
-                    subHeading={"Computational Engineering at Depot Level"}
+                    heading={'Engineering Directorate officer, Department of Aeronautical Applications'}
+                    subHeading={"State’s Aircraft Depot"}
                     fromDate={'2020'}
                     toDate={'present'}
                 />
-                <div className="experience-description">
-                    <span className="resume-description-text">
-                        Currently working as
-                    </span>
-                </div>
-                <div className="experience-description">
-                    <span className="resume-description-text">
-                        - Making studies in ......
-                    </span>
-                    <br />
-                    <span className="resume-description-text">
-                        - Working with 3d printers .......{" "}
-                    </span>
-                    <br />
-                    <span className="resume-description-text">
-                        - Working with XRF
-                    </span>
-                    <br />
-                </div>
+                <ResumeHeading
+                    heading={'Quality Assurance Quality Control Supervisor'}
+                    subHeading={"Maintenance Squadron, Tanagra AB"}
+                    fromDate={'2017'}
+                    toDate={'2018'}
+                />
+                <ResumeHeading
+                    heading={'Quality Assurance Quality Control Officer'}
+                    subHeading={"Maintenance Squadron, Tanagra AB"}
+                    fromDate={'2015'}
+                    toDate={'2017'}
+                />
+                <ResumeHeading
+                    heading={'Quality Assurance Quality Control Supervisor'}
+                    subHeading={"114 Combat Wing, 332 Squadron Tanagra"}
+                    fromDate={'2014'}
+                    toDate={'2015'}
+                />
+                <ResumeHeading
+                    heading={'Preventive Maintenance Supervisor'}
+                    subHeading={"114 Combat Wing, 332 Squadron Tanagra"}
+                    fromDate={'2013'}
+                    toDate={'2014'}
+                />
+                <ResumeHeading
+                    heading={'APG/Crew Chief Mirage 2000• Flight Line Manager'}
+                    subHeading={"114 Combat Wing, 332 Squadron Tanagra"}
+                    fromDate={'2012'}
+                    toDate={'2013'}
+                />
             </div>
         </div>,
 
+        /* SKILLS */
+        <div
+            className="resume-screen-container programming-skills-container"
+            key="programming-skills"
+        >
+            {SkillsDetails.map((skillD, index) => (
+                <div className="skill-parent" key={index}>
+                    <div className="heading-bullet"></div>
+                    <span>{skillD.skillD}</span>
+                    <div className="skill-percentage">
+                        <div
+                            style={{ width: skillD.ratingPercentage + "%" }}
+                            className="active-percentage-bar"
+                        ></div>
+                    </div>
+                </div>
+            ))}
+        </div>,
         /* PROGRAMMING SKILLS */
         <div
             className="resume-screen-container programming-skills-container"
@@ -189,20 +240,25 @@ const Resume = (props) => {
         /* Interests */
         <div className="resume-screen-container" key="interests">
             <ResumeHeading
+                heading="Programming"
+                description="Every day I learn something new."
+            />
+
+            <ResumeHeading
                 heading="Chess"
-                description="Playing in 1st National League of Greece."
+                description="Played in 1st National League of Greece. Μy ELO is around 1780."
             />
             <ResumeHeading
                 heading="Basketball"
-                description="Playing seventeen years in 4 teams and in ARMY-NATIONAL-TEAM."
+                description="Played for 17 years in 4 diferent teams(highest category:Third National League).Landmark playing for the ARMY-NATIONAL-TEAM."
             />
             <ResumeHeading
                 heading="Traditional Dances"
-                description="any years of greek folk dances."
+                description="Many years dancing greek folk dances."
             />
             <ResumeHeading
-                heading="BooksLover"
-                description="A read at least one book every 15 days."
+                heading="BookLover"
+                description="Ι read at least one book every 15 days."
             />
         </div>,
     ];
