@@ -118,31 +118,39 @@ const Resume = (props) => {
         /*online courses */
 
         <div className="resume-screen-container" key="Online Courses">
-            <ResumeHeading
-                heading={'ENGR2000X: A Hands-on Introduction to Engineering Simulations'}
-                subHeading={"Cornell University, Edex Courses"}
-                fromDate={'October 2019'}
-                toDate={'November 2019'}
-            />
-            <ResumeHeading
-                heading={'2022 Complete Python Bootcamp From Zero to Hero in Python'}
-                subHeading={"Udemy Courses"}
-                fromDate={'August 2021'}
-                toDate={'September 2021'}
-            />
-            <ResumeHeading
-                heading={'The Web Developer Bootcamp 2022'}
-                subHeading={"Udemy Courses"}
-                fromDate={'September 2021'}
-                toDate={'November 2021'}
-            />
-            <ResumeHeading
-                heading={'Modern React with Redux'}
-                subHeading={"Udemy Courses, Master React and Redux with React Router, Webpack, and Create-React-App. Includes Hooks! "}
-                fromDate={'November 2021'}
-                toDate={'February 2022'}
-            />
-        </div>,
+            <a href="https://courses.edx.org/certificates/809425b6dbf440629888384ed25a25f9">
+                <ResumeHeading
+                    heading={'ENGR2000X: A Hands-on Introduction to Engineering Simulations'}
+                    subHeading={"Cornell University, Edex Courses"}
+                    fromDate={'October 2019'}
+                    toDate={'November 2019'}
+                />
+            </a>
+            <a href="https://www.udemy.com/certificate/UC-b1f69bab-f2db-4d33-9050-32ce7e2bf6b4/">
+                <ResumeHeading
+                    heading={'2022 Complete Python Bootcamp From Zero to Hero in Python'}
+                    subHeading={"Udemy Courses"}
+                    fromDate={'August 2021'}
+                    toDate={'September 2021'}
+                />
+            </a>
+            <a href="https://www.udemy.com/certificate/UC-b866bc57-58b4-4ac1-86c7-627eae1672c0/">
+                <ResumeHeading
+                    heading={'The Web Developer Bootcamp 2022'}
+                    subHeading={"Udemy Courses"}
+                    fromDate={'September 2021'}
+                    toDate={'November 2021'}
+                />
+            </a >
+            <a href="https://www.udemy.com/certificate/UC-47d6463b-2a10-41d4-ade4-3f13ac3d9f52/">
+                <ResumeHeading
+                    heading={'Modern React with Redux'}
+                    subHeading={"Udemy Courses, Master React and Redux with React Router, Webpack, and Create-React-App. Includes Hooks! "}
+                    fromDate={'November 2021'}
+                    toDate={'February 2022'}
+                />
+            </a >
+        </div >,
 
         /* WORK EXPERIENCE */
         <div className="resume-screen-container" key="work-experience">
