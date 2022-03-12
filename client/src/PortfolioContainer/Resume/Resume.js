@@ -3,6 +3,7 @@ import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Resume.css";
+import { Link } from 'react-router-dom';
 
 const Resume = (props) => {
     /* STATES */
@@ -256,6 +257,7 @@ const Resume = (props) => {
                 heading="Chess"
                 description="Played in 1st National League of Greece. Μy ELO is around 1780."
             />
+            <Link to="/basketball"> <button className="Interests_button_basketball">See my Basketball Career</button></Link>
             <ResumeHeading
                 heading="Basketball"
                 description="Played for 17 years in 4 diferent teams(highest category:Third National League).Landmark playing for the ARMY-NATIONAL-TEAM."
@@ -264,10 +266,12 @@ const Resume = (props) => {
                 heading="Traditional Dances"
                 description="Many years dancing greek folk dances."
             />
+            <Link to="/books"> <button className="Interests_button">See my collection of books</button></Link>
             <ResumeHeading
                 heading="BookLover"
                 description="Ι read at least one book every 15 days."
             />
+
         </div>,
     ];
 

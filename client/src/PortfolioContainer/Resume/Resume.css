@@ -6,7 +6,65 @@
     min-height: fit-content;
     margin: 80px 0;
   }
-  
+
+  .orange_button{
+    position: relative;
+    border-radius: 30%;
+    left: 600px;
+    bottom: 20px;
+    height: 22px;
+    background-color: orangered;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      }
+  .orange_button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+
+  .Interests_button{
+    position: fixed;
+    border-radius: 30%;
+    left: 450px;
+    bottom: 20px;
+    height: 36px;
+    background-color: orangered;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+  .Interests_button:hover{
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+
+  .Interests_button_basketball{
+    position: fixed;
+    border-radius: 36%;
+    left: 450px;
+    bottom: 180px;
+    height: 50px;
+    width: 200px;
+    background-color: orangered;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+  .Interests_button_basketball:hover{
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  .orange_last_button{
+    position: relative;
+    border-radius: 30%;
+    left: 600px;
+    bottom: 0px;
+    height: 22px;
+    background-color: orangered;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      }
+  .orange_last_button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+
   .resume-card {
     display: flex;
     height: 360px;
