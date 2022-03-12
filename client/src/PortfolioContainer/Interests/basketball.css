@@ -1,0 +1,38 @@
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('basketball.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .containerHighlights{
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('basketball2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .header_top{
+    background-color: rgb(189, 134, 15);
+  }
+
+  .header_title{
+    color: rgb(230, 232, 235);
+    font-size: large;
+    font-weight: 600;
+  }
+
+ .containertable {
+   position: relative;
+   left: 120vh;
+   top: 10vh;
+ }
+ .fw-light{
+  background-color: rgb(206, 166, 79);
+  padding-top: 0%;
+  position: relative;
+  text-shadow: 1px 1px red;
+ }
